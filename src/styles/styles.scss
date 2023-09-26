@@ -1,0 +1,230 @@
+.body {
+	padding: 15px;
+	background-color: rgb(17, 27, 21);
+}
+
+button {
+	cursor: pointer;
+	&:active {
+		border: 1px solid black;
+		color: white;
+	}
+}
+
+.garage-btns__wrapper {
+	width: 150px;
+	margin: 0 auto;
+	padding: 30px 0;
+	display: flex;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: 150px;
+	height: 43px;
+	padding: 15px 30px;
+	background: #224d75;
+	border-radius: 4px;
+	transition: all .5s;
+	cursor: pointer;
+	&:active {
+		border: 2px solid rgb(24, 80, 80);
+		color: rgb(119, 172, 172);
+		transition: all .5s;
+	}
+}
+
+.edit-block {
+	display: flex;
+	flex-direction: column;
+	&__block {
+		width: 400px;
+		display: flex;
+		margin-bottom: 10px;
+		.name {
+			height: 21px;
+			margin-right: 5px;
+		}
+		.btn {
+			height: 29px;
+			border: 1px solid rgb(3, 3, 75);
+			padding: 13px 30px;
+			margin-left: 5px;
+			&:active {
+				border:rgb(65, 65, 122)
+			}
+		}
+	}
+
+	&__race-btns {
+		display: flex;
+		.btn {
+			width: 129px;
+		}
+	}
+}
+
+
+.garage__header {
+	color:#1b62a5;
+	text-align: center;
+}
+
+.garage__page-number {
+	margin-bottom: 20px;
+	color:rgb(194, 215, 228);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.line {
+	margin-bottom: 30px;
+	&__btns {
+		display: flex;
+	}
+	&__name {
+		margin-left: 15px;
+		color:rgb(119, 172, 172);
+		font-size: 14px;
+	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		width: 50px;
+		height: 30px;
+		padding: 15px 30px;
+		background: #224d75;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all .5s;
+		&:active {
+			border: 2px solid rgb(24, 80, 80);
+			color: rgb(119, 172, 172);
+			transition: all .5s;
+		}
+	}
+	&__dashed-line {
+		width: 90%;
+		border-bottom: 3px dashed rgb(233, 233, 233);
+	}
+	.track {
+		position: relative;
+		display: flex;
+		width: 96vw;
+		height: 33px;
+		.controls {
+			&__btn {
+				width: 37px;
+				height: 17px;
+				font-size: 10px;
+				background-color:rgb(65, 65, 122);
+				color:rgb(194, 215, 228)
+			}
+		}
+		.img {
+			position: absolute;
+			left: 86px;
+		}
+	}
+	.finish__pic {
+		display: block;
+    margin-right: 10px;
+	}
+}
+
+.line__img, .data__img {
+	width: 60px;
+	height: 30px;
+	-webkit-mask-image: url(../assets/car.svg);
+	mask-image: url(../assets/car.svg);
+	-webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.finish__pic {
+	width: 30px;
+	height: 50px;
+}
+
+.winners__list, td, tr {
+	border-collapse: collapse;
+	border: 1px solid rgb(115, 115, 136);
+	text-align: center;
+	color:azure;
+}
+
+.title, .subtitle {
+	color:aliceblue;
+}
+
+.subheader {
+	background-color:rgb(65, 65, 122);
+	color:beige;
+	&__item {
+		padding: 20px;
+	}
+}
+
+.pagination, .winnersPagination {
+	display: flex;
+	gap: 8px;
+	&__btn {
+		width: 30px;
+    height: 15px;
+	}
+
+}
+
+.data {
+	border: 1px solid rgb(115, 115, 136);
+}
+
+.hidden {
+	display: none;
+}
+
+.slowHide {
+	opacity: 0;
+	transition: 2s all;
+}
+
+.btn-inactive {
+	background: #2f3f4c;
+	color: #6c6c6a;
+	&:active {
+		background: #2f3f4c;
+		color: #6c6c6a;
+		border: none;
+	}
+}
+
+/* .race {
+	transform: translateX(85vw);
+	transition: 5s linear;
+} */
+
+/* .race {
+	transform: translateX(85vw);
+	transition: 5s linear;
+} */
+
+.alert {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(420%, 350%);
+	width: 150px;
+	height: 100px;
+	background-color:darkcyan;
+	color:rgb(194, 215, 228);
+	z-index: 50;
+}
+
+.winnersPagination{
+	margin-top: 20px;
+}
